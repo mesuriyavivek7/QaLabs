@@ -1,15 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ServicesPage from "./pages/Services";
+import HomePage from "./pages/Home"; // Assume a home page exists
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className='text-red-500 bg-green-500'>
-      Hello
-    </div>
-  )
+    <Router>
+      <Routes></Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
